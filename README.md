@@ -12,3 +12,11 @@ Projeto didático para aplicação de boas práticas de MLOps.
 - `logs`: registros de execução.
 - `tests`: testes básicos.
 - `docs`: documentação complementar.
+
+##Governança e versionamento
+- Este projeto utiliza Git para controle de alterações, tag semântica para identificação de versão e arquivos auxiliares para registrar a versão do modelo e do dataset.
+
+- Versão inicial do projeto: `v0.1.0`
+- Registro do modelo: `models/model_registry.json`
+- Manifesto do dataset: `data/dataset_manifest.json`
+ -Log de auditoria: `logs/auditoria_aula_07.log`
