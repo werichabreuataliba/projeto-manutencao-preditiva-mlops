@@ -1,0 +1,38 @@
+    name: Integrar alterações na develop
+
+    on:
+      push:
+        branches-ignore:
+          - develop
+
+    permissions:
+      contents: write
+
+    concurrency:
+      group: integrar-na-develop
+      cancel-in-progress: false
+
+    jobs:
+      integrar:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Baixar o repositório
+            uses: actions/checkout@v4
+            with:
+              ref: develop
+              fetch-depth: 0
+
+          - name: Integrar branch de origem na develop
+            env:
+              SOURCE_BRANCH: ${{ github.ref_name }}
+            run: |
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+              git fetch origin develop "$SOURCE_BRANCH"
+
+              git merge --no-ff --allow-unrelated-histories "origin/$SOURCE_BRANCH"                 -m "Merge $SOURCE_BRANCH into develop"
+
+              git push origin HEAD:develop
+          
