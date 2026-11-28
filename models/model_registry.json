@@ -1,0 +1,11 @@
+{
+    "model_name": "modelo_manutencao_preditiva",
+    "model_version": "0.1.0",
+    "semantic_tag": "v0.1.0",
+    "artifact_path": "models/modelo_manutencao_v0_1_0.pkl",
+    "metrics_path": "reports/metricas_modelo_v0_1_0.json",
+    "dataset_path": "data/raw/dados_manutencao_preditiva.csv",
+    "created_at": "2026-11-28T00:19:21.409306",
+    "stage": "development",
+    "description": "Primeira versão didática do modelo para manutenção preditiva."
+}

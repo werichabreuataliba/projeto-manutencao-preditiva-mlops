@@ -1,0 +1,10 @@
+{
+    "dataset_name": "dados_manutencao_preditiva",
+    "dataset_version": "0.1.0",
+    "file_path": "data/raw/dados_manutencao_preditiva.csv",
+    "rows": 300,
+    "columns": 5,
+    "sha256": "84da8bf21aac06f3397030efce58687af3eaa532d730bfd97ab860594ffad0b9",
+    "registered_at": "2026-11-28T00:19:25.440410",
+    "description": "Registro conceitual de versão do dataset usado no treinamento."
+}
